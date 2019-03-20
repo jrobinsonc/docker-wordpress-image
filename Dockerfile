@@ -11,7 +11,7 @@ RUN yum update -y \
 
 # Installing server stuff
 RUN yum install -y httpd mod_ssl mariadb \
-    && yum install -y php php-mysql php-opcache php-xml php-gd php-mbstring php-openssl php-curl php-json php-pdo php-hash php-date php-dom php-filter php-pcre php-session php-simplexml php-spl php-tokenizer php-xdebug php-posix
+    && yum install -y php php-mysql php-opcache php-xml php-gd php-mbstring php-openssl php-curl php-json php-pdo php-hash php-date php-dom php-filter php-pcre php-session php-simplexml php-spl php-tokenizer php-xdebug php-posix php-zip
 
 # Installing Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
