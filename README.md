@@ -1,8 +1,9 @@
-# Docker WordPress
+# Docker WordPress Image
 
-Docker image to build a WordPress site based on CentOS
-
+Docker image designed to run a WordPress site.  
 <https://hub.docker.com/r/jrobinsonc/wordpress/>
+
+The image is based on CentOS.
 
 ## Includes
 
