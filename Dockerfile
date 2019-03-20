@@ -35,6 +35,8 @@ RUN mkdir /var/www/logs
 COPY entrypoint.sh /root/entrypoint.sh
 RUN chmod +x /root/entrypoint.sh
 
+WORKDIR /var/www/html
+
 # Cleaning the room
 RUN rm -rf /var/cache/yum/* \
     && yum clean all
