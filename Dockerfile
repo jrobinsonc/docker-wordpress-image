@@ -32,6 +32,11 @@ COPY conf/php.ini /etc/php.d/wordpress.ini
 COPY conf/httpd.conf /etc/httpd/conf.d/wordpress.conf
 RUN mkdir /var/www/logs
 
+COPY entrypoint.sh /root/entrypoint.sh
+RUN chmod +x /root/entrypoint.sh
+
 # Cleaning the room
 RUN rm -rf /var/cache/yum/* \
     && yum clean all
+
+ENTRYPOINT ["/root/entrypoint.sh"]
