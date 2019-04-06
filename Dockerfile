@@ -7,7 +7,7 @@ RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.
 
 # Updating packages and installing basic stuff
 RUN yum update -y \
-    && yum install -y curl vim git unzip netcat
+    && yum install -y curl vim git unzip nmap-ncat
 
 # Installing server stuff
 RUN yum install -y httpd mod_ssl mariadb \
