@@ -28,6 +28,11 @@ docker run -d \
 
 As noted in the command above, the files for the WordPress installation should placed at `/var/www/html`. 
 
+### About the SSL Certificate
+
+This image comes with a self-signed certificate (located at `./conf/ssl`) that can be imported into your computer in order to avoid the SSL warning in the browser every time you access the website using `https://`.
+
+Doc soon on how to do the import.
 
 ## License
 
