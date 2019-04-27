@@ -26,8 +26,6 @@ docker run -d \
   jrobinsonc/wordpress
 ```
 
-As noted in the command above, the files for the WordPress installation should placed at `/var/www/html`. 
-
 ### Snippets
 
 I create a directory to put snippets on how to use and implement this image. The directory is `./snippets`.
