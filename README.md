@@ -11,9 +11,23 @@ The image is based on CentOS.
 * Composer
 * WP-CLI
 
-## Usage
+## How to use
 
-Doc soon.
+This image is an environment designed to perfectly run a WordPress site, but does not come with the installation files for the CMS. I think you should be able to define the installation of your website using either [composer](https://getcomposer.org/), [WP-CLI](https://wp-cli.org/) or the traditional way (manually downloading the files).
+
+**Start the container:**
+
+```shell
+docker run -d \
+  --name wp \
+  -p 80:80 \
+  -p 443:443 \
+  -v $(pwd):/var/www/html \
+  jrobinsonc/wordpress
+```
+
+As noted in the command above, the files for the WordPress installation should placed at `/var/www/html`. 
+
 
 ## License
 
