@@ -32,9 +32,6 @@ COPY conf/php.ini /etc/php.d/wordpress.ini
 COPY conf/httpd.conf /etc/httpd/conf.d/wordpress.conf
 RUN mkdir /var/www/logs
 
-COPY conf/ssl/localhost.crt /etc/pki/tls/certs/localhost.crt
-COPY conf/ssl/localhost.key /etc/pki/tls/private/localhost.key
-
 COPY entrypoint.sh /root/entrypoint.sh
 RUN chmod +x /root/entrypoint.sh
 
