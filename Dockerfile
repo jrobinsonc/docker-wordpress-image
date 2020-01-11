@@ -28,7 +28,7 @@ RUN ln -sf /usr/share/zoneinfo/UTC /etc/localtime \
 
 EXPOSE 80 443
 
-COPY conf/php.ini /etc/php.d/wordpress.ini
+COPY conf/php.ini /etc/php.d/50-wordpress.ini
 COPY conf/httpd.conf /etc/httpd/conf.d/wordpress.conf
 RUN mkdir /var/www/logs
 
