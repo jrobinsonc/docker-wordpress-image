@@ -20,6 +20,8 @@ RUN set -eux; \
       libssh2-1-dev \
       libssh2-1 \
     ; \
+    pecl install imagick-3.4.4; \
+    pecl install ssh2-1.2; \
     rm -rf /var/lib/apt/lists/*
 
 # Installing packages and PHP extensions needed by WordPress.
