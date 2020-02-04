@@ -6,11 +6,10 @@ env:
 
 before_script:
   - env | sort
-  - cd "src/$VERSION/$VARIANT"
   - image="${DOCKER_USERNAME}/wordpress:${VERSION}-${VARIANT}"
 
 script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker build -t "$image" .
+  - docker build -t "$image" -f ./src/$VERSION/$VARIANT/Dockerfile .
   - docker images
   - docker push $image

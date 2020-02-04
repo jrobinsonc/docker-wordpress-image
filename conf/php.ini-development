@@ -14,17 +14,8 @@ upload_max_filesize = 10M
 post_max_size = 10M
 memory_limit = 256M
 
-; Recommended PHP settings for OPcache
-; https://secure.php.net/manual/en/opcache.installation.php
-opcache.memory_consumption=128
-opcache.interned_strings_buffer=8
-opcache.max_accelerated_files=4000
-opcache.revalidate_freq=60
-opcache.fast_shutdown=1
-opcache.enable_cli=1
-
 xdebug.remote_enable = true
 xdebug.remote_autostart = true
 xdebug.remote_port = 9000
 xdebug.max_nesting_level = 250
-xdebug.remote_log="/var/www/logs/xdebug.log"
+xdebug.remote_log = /dev/stderr

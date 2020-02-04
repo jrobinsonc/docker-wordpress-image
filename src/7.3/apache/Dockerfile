@@ -51,7 +51,7 @@ RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli
   && chmod +x wp-cli.phar \
   && mv wp-cli.phar /usr/local/bin/wp
 
-COPY php.ini /usr/local/etc/php/conf.d/wordpress.ini
-COPY php-dev.ini /usr/local/etc/php/conf.d/wordpress.ini-development
+COPY conf/php.ini-development /usr/local/etc/php/conf.d/wordpress.ini-development
+COPY conf/php.ini-production /usr/local/etc/php/conf.d/wordpress.ini-production
 
 RUN a2enmod rewrite expires headers
