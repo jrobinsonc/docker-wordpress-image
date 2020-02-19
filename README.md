@@ -20,7 +20,6 @@
 
 ```shell
 docker run -d \
-  --name app \
   -p 80:80 \
   -p 443:443 \
   -v $(pwd):/var/www/html \
