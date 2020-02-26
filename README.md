@@ -13,6 +13,7 @@
 **Image Variants**
 
 * PHP 7.3 with Apache → `jrobinsonc/wordpress:7.3-apache`
+* PHP 7.2 with Apache → `jrobinsonc/wordpress:7.2-apache`
 
 ## How to use
 
