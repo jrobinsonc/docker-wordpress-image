@@ -3,6 +3,7 @@ services: docker
 
 env:
   - VERSION=7.3 VARIANT=apache
+  - VERSION=7.2 VARIANT=apache
 
 before_script:
   - env | sort
