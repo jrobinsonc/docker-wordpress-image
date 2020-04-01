@@ -27,7 +27,7 @@ RUN set -ex; \
 # Installing packages and PHP extensions needed by WordPress.
 # https://make.wordpress.org/hosting/handbook/handbook/server-environment/#php-extensions
 RUN set -eux; \
-    docker-php-ext-configure gd --with-freetype-dir=/usr --with-jpeg-dir=/usr --with-png-dir=/usr; \
+    docker-php-ext-configure gd --with-freetype --with-jpeg; \
     docker-php-ext-install -j "$(nproc)" \
       bcmath \
       exif \
